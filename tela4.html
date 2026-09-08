@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitantes</title>
+    <link rel="stylesheet" href="tela4.css">
+</head>
+<body>
+
+    <div class="pagina">
+
+        <div class="menu">
+
+            <div class="logo">
+                <div class="iconeLogo">▦</div>
+
+                <div>
+                    <h2>CondoEasy</h2>
+                    <p>Gestão Inteligente</p>
+                </div>
+            </div>
+
+            <a>
+                <span>⌂</span>
+                <p>Início</p>
+            </a>
+
+            <a>
+                <span>▣</span>
+                <p>Reservas</p>
+            </a>
+
+            <a>
+                <span>◁</span>
+                <p>Comunicados</p>
+            </a>
+
+            <a class="selecionado">
+                <span>♙</span>
+                <p>Visitantes</p>
+            </a>
+
+            <a>
+                <span>☏</span>
+                <p>Chamados</p>
+            </a>
+
+            <a>
+                <span>◌</span>
+                <p>Moradores</p>
+            </a>
+
+            <a>
+                <span>⚙</span>
+                <p>Configurações</p>
+            </a>
+
+        </div>
+
+
+        <div class="principal">
+
+            <div class="topo">
+                <h1>Visitantes</h1>
+
+                <div class="perfil">
+                    <div class="notificacao">
+                        <span>◔</span>
+                        <small></small>
+                    </div>
+
+                    <div class="fotoPerfil"></div>
+                </div>
+            </div>
+
+
+
+            <div class="conteudo">
+
+                <div class="linhaCima">
+
+                    <div class="cadastro">
+
+                        <h3>♙ Novo Cadastro</h3>
+
+                        <label>Nome Completo</label>
+                        <input type="text" placeholder="Ex: Ricardo Silva">
+
+                        <div class="dupla">
+                            <div>
+                                <label>Documento (RG/CPF)</label>
+                                <input type="text" placeholder="000.000.000">
+                            </div>
+
+                            <div>
+                                <label>Morador Responsável</label>
+                                <select>
+                                    <option>Apto 102</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="dupla">
+                            <div>
+                                <label>Data</label>
+                                <input type="text" placeholder="mm/dd/aa">
+                            </div>
+
+                            <div>
+                                <label>Horário</label>
+                                <input type="text" placeholder="--:-- --">
+                            </div>
+                        </div>
+
+                        <button>✓ Autorizar Entrada</button>
+
+                    </div>
+
+
+
+                    <div class="visitantes">
+
+                        <div class="filtros">
+
+                            <div class="botoesFiltro">
+                                <a class="ativo">Todos</a>
+                                <a>Aguardando</a>
+                                <a>No Local</a>
+                            </div>
+
+                            <div class="busca">
+                                <span>⌕</span>
+                                <input type="text" placeholder="Buscar visitante...">
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="cardVisitante">
+
+                            <div class="esquerdaCard">
+
+                                <div class="fotoVisitante foto1"></div>
+
+                                <div class="infoVisitante">
+                                    <h4>Marcos Aurélio P.</h4>
+                                    <p>CPF: 123.***.***-00 • Morador: Mariana (102)</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="statusCard">
+                                <p>Status</p>
+                                <strong class="liberado">LIBERADO</strong>
+                            </div>
+
+                            <div class="horaCard">
+                                <p>Chegada</p>
+                                <strong>Hoje, 14:30</strong>
+                            </div>
+
+                            <div class="mais">⋮</div>
+
+                            <span class="bolinha verde"></span>
+
+                        </div>
+
+
+
+                        <div class="cardVisitante">
+
+                            <div class="esquerdaCard">
+
+                                <div class="fotoVisitante foto2"></div>
+
+                                <div class="infoVisitante">
+                                    <h4>Juliana Martins</h4>
+                                    <p>CPF: 456.***.***-00 • Morador: Carlos (205)</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="statusCard">
+                                <p>Status</p>
+                                <strong class="aguardando">AGUARDANDO</strong>
+                            </div>
+
+                            <div class="horaCard">
+                                <p>Agendado</p>
+                                <strong>Hoje, 16:00</strong>
+                            </div>
+
+                            <div class="mais">⌘</div>
+
+                            <span class="bolinha amarelo"></span>
+
+                        </div>
+
+
+
+                        <div class="cardVisitante apagado">
+
+                            <div class="esquerdaCard">
+
+                                <div class="fotoVisitante foto3">⌦</div>
+
+                                <div class="infoVisitante">
+                                    <h4>Fernando Costa</h4>
+                                    <p>Saída registrada: 11:20</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="statusCard">
+                                <p>Status</p>
+                                <strong class="finalizado">FINALIZADO</strong>
+                            </div>
+
+                            <div class="mais">↻</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="qr">
+
+                    <div class="textoQr">
+
+                        <h2>Acesso Rápido com QR Code</h2>
+
+                        <p>
+                            Gere códigos temporários para seus visitantes e receba
+                            notificações em tempo real assim que eles passarem pela portaria.
+                            Segurança total para seu condomínio.
+                        </p>
+
+                        <div class="botoesQr">
+                            <button class="claro">↗ Enviar para WhatsApp</button>
+                            <button class="escuro">Visualizar Todos</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="caixaQr">
+
+                        <div class="qrBranco">
+
+                            <div class="codigo">
+
+                                <span class="preto a1"></span>
+                                <span class="preto a2"></span>
+                                <span class="preto a3"></span>
+                                <span class="preto a4"></span>
+                                <span class="preto a5"></span>
+                                <span class="preto a6"></span>
+                                <span class="preto a7"></span>
+                                <span class="preto a8"></span>
+                                <span class="preto a9"></span>
+                                <span class="preto a10"></span>
+                                <span class="preto a11"></span>
+                                <span class="preto a12"></span>
+                                <span class="preto a13"></span>
+                                <span class="preto a14"></span>
+                                <span class="preto a15"></span>
+                                <span class="preto a16"></span>
+                                <span class="preto a17"></span>
+                                <span class="preto a18"></span>
+
+                            </div>
+
+                            <p>CONDO-8892-XP</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="rodape">
+
+                <p>© 2024 CondoEasy. Todos os direitos reservados.</p>
+
+                <div class="linksRodape">
+                    <a>Privacidade</a>
+                    <a>Termos</a>
+                    <a>Suporte</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="botaoMais">+</div>
+
+    </div>
+
+</body>
+</html>
