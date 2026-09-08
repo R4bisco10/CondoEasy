@@ -1,0 +1,525 @@
+:root {
+    --branco: #fff;
+    --preto: #000;
+    --cinza: #777;
+    --cinza2: #999;
+    --fundo: #f7f3f5;
+    --borda: #e4e4e4;
+    --sombra: 0 1px 4px rgba(180, 180, 180, 0.35);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo);
+    color: #222;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+a,
+select {
+    cursor: pointer;
+}
+
+.pagina {
+    min-height: 100vh;
+    display: flex;
+}
+
+.menu {
+    width: 173px;
+    background-color: #f1eff1;
+    border-right: 1px solid #e8e8e8;
+    padding-top: 12px;
+}
+
+.logo {
+    padding: 0 14px 16px 14px;
+}
+
+.logo h2 {
+    font-size: 15px;
+}
+
+.logo p {
+    font-size: 10px;
+    color: #777;
+    margin-top: 2px;
+}
+
+.menu a {
+    height: 37px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 14px;
+    color: #555;
+    border-left: 3px solid transparent;
+}
+
+.menu a span {
+    width: 14px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.menu a p {
+    font-size: 12px;
+}
+
+.menu .selecionado {
+    background-color: #e8e6e8;
+    color: #111;
+    border-left: 3px solid #111;
+}
+
+.principal {
+    flex: 1;
+}
+
+.topo {
+    height: 43px;
+    background-color: white;
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 26px;
+}
+
+.topo h1 {
+    font-size: 16px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.notificacao {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+    margin-right: 14px;
+}
+
+.notificacao small {
+    width: 6px;
+    height: 6px;
+    background-color: #ef4d55;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    right: -2px;
+}
+
+.linhaPerfil {
+    width: 1px;
+    height: 26px;
+    background-color: #e7e7e7;
+    margin-right: 14px;
+}
+
+.dadosPerfil {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.dadosPerfil h3 {
+    font-size: 12px;
+}
+
+.dadosPerfil p {
+    font-size: 10px;
+    color: #777;
+    margin-top: 2px;
+}
+
+.fotoPerfil {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle at 50% 35%, #d8b18e 0 20%, transparent 21%),
+        linear-gradient(#9aaaa9 55%, #617478 55%);
+}
+
+.conteudo {
+    padding: 28px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.cabecalho h2 {
+    font-size: 18px;
+}
+
+.cabecalho p {
+    font-size: 11px;
+    color: #666;
+    margin-top: 6px;
+}
+
+.abrir {
+    height: 34px;
+    padding: 0 24px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.area {
+    display: flex;
+    gap: 16px;
+}
+
+.novo {
+    width: 207px;
+    background-color: white;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    box-shadow: var(--sombra);
+    padding: 16px;
+}
+
+.novo h3 {
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.novo label {
+    display: block;
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.novo select,
+.novo textarea {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background-color: #f6f3f5;
+    font-size: 10px;
+    color: #444;
+}
+
+.novo select {
+    height: 31px;
+    padding: 0 10px;
+    margin-bottom: 12px;
+}
+
+.prioridades {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 12px;
+}
+
+.prioridades button {
+    flex: 1;
+    height: 24px;
+    background-color: #f5f5f5;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    font-size: 10px;
+    color: #555;
+}
+
+.prioridades .ativo {
+    background-color: #182239;
+    color: white;
+    border-color: #182239;
+}
+
+.novo textarea {
+    height: 80px;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.upload {
+    height: 93px;
+    border: 1px dashed #dadada;
+    border-radius: 4px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.upload span {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.upload p {
+    font-size: 10px;
+    line-height: 13px;
+}
+
+.upload small {
+    font-size: 8px;
+    color: #999;
+    margin-top: 6px;
+}
+
+.enviar {
+    width: 100%;
+    height: 33px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.historico {
+    flex: 1;
+    background-color: white;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    box-shadow: var(--sombra);
+    overflow: hidden;
+}
+
+.topoHistorico {
+    height: 65px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topoHistorico h3 {
+    font-size: 15px;
+}
+
+.filtro {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 13px;
+}
+
+.tabela {
+    border-top: 1px solid #f0f0f0;
+}
+
+.tituloTabela,
+.linhaTabela {
+    display: grid;
+    grid-template-columns: 1.1fr 1.7fr .9fr 1fr 1.2fr;
+    align-items: center;
+}
+
+.tituloTabela {
+    height: 35px;
+    background-color: #faf8f9;
+    border-bottom: 1px solid #ececec;
+    padding: 0 16px;
+}
+
+.tituloTabela p {
+    font-size: 10px;
+    color: #777;
+    letter-spacing: .4px;
+}
+
+.linhaTabela {
+    min-height: 80px;
+    padding: 0 16px;
+    border-bottom: 1px solid #ececec;
+}
+
+.protocolo strong {
+    font-size: 11px;
+}
+
+.assunto h4 {
+    font-size: 11px;
+    line-height: 15px;
+    max-width: 110px;
+}
+
+.assunto p {
+    font-size: 10px;
+    color: #777;
+    margin-top: 4px;
+}
+
+.data p {
+    font-size: 10px;
+    color: #555;
+    line-height: 14px;
+}
+
+.prioridade span,
+.status span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 4px 9px;
+    font-size: 10px;
+}
+
+.alta {
+    background-color: #ffe9e8;
+    color: #ef746d;
+}
+
+.media {
+    background-color: #efefef;
+    color: #777;
+}
+
+.baixa {
+    background-color: #edf3fb;
+    color: #7a96b8;
+}
+
+.analise {
+    background-color: #ececec;
+    color: #666;
+}
+
+.andamento {
+    background-color: #fff1e6;
+    color: #ed8235;
+}
+
+.finalizado {
+    background-color: #e8f8ef;
+    color: #34b973;
+}
+
+.rodapeTabela {
+    height: 40px;
+    padding: 0 12px;
+    background-color: #faf8f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodapeTabela p {
+    font-size: 10px;
+    color: #777;
+}
+
+.paginacao {
+    display: flex;
+    gap: 6px;
+}
+
+.paginacao button {
+    height: 24px;
+    padding: 0 12px;
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+.paginacao .apagado {
+    color: #aaa;
+    background-color: #f4f4f4;
+}
+
+@media(max-width: 980px) {
+    .area {
+        flex-direction: column;
+    }
+
+    .novo {
+        width: 100%;
+    }
+}
+
+@media(max-width: 760px) {
+    .pagina {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        padding: 0 0 10px 4px;
+    }
+
+    .menu a {
+        width: calc(50% - 2px);
+        border-left: none;
+        border-radius: 4px;
+        padding-left: 10px;
+    }
+
+    .topo {
+        height: auto;
+        padding: 12px 14px;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .perfil {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .conteudo {
+        padding: 14px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .historico {
+        overflow-x: auto;
+    }
+
+    .tituloTabela,
+    .linhaTabela {
+        min-width: 620px;
+    }
+}
