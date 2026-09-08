@@ -1,0 +1,675 @@
+:root {
+    --fundo: #f8f5f6;
+    --branco: #ffffff;
+    --borda: #e7e4e6;
+    --cinza: #777;
+    --preto: #111;
+    --verde: #25bb84;
+    --vermelho: #ee6666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo);
+    color: #222;
+}
+
+button,
+input {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+.pagina {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.menu {
+    width: 132px;
+    min-height: 100vh;
+    background-color: #f2f0f2;
+    border-right: 1px solid #e8e8e8;
+    position: relative;
+    flex-shrink: 0;
+    padding-top: 10px;
+}
+
+.logo {
+    padding-left: 13px;
+    margin-bottom: 8px;
+}
+
+.logo h2 {
+    font-size: 13px;
+    line-height: 14px;
+}
+
+.logo p {
+    font-size: 7px;
+    color: #777;
+    margin-top: 2px;
+}
+
+.menu > a {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 12px;
+    color: #555;
+    font-size: 9px;
+}
+
+.menu > a span {
+    width: 12px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.menu > a p {
+    font-size: 9px;
+}
+
+.menu .selecionado {
+    background-color: #e6e4e6;
+    border-left: 3px solid #111;
+    color: #111;
+    padding-left: 9px;
+}
+
+.usuarioMenu {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 12px;
+    height: 39px;
+    background-color: #deddde;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px;
+}
+
+.fotoUsuario {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background:
+        radial-gradient(circle at 50% 35%, #dab18a 0 20%, transparent 21%),
+        linear-gradient(#95a5a8 55%, #4e676c 55%);
+}
+
+.usuarioMenu h4 {
+    font-size: 7px;
+}
+
+.usuarioMenu p {
+    font-size: 6px;
+    color: #666;
+    margin-top: 2px;
+}
+
+.principal {
+    flex: 1;
+    min-width: 0;
+}
+
+.topo {
+    height: 30px;
+    background-color: var(--branco);
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px 0 20px;
+}
+
+.pesquisa {
+    width: 201px;
+    height: 24px;
+    background-color: #f4f2f4;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 9px;
+}
+
+.pesquisa span {
+    font-size: 11px;
+    color: #666;
+}
+
+.pesquisa input {
+    width: 100%;
+    background-color: transparent;
+    font-size: 7px;
+}
+
+.ladoTopo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.notificacao {
+    position: relative;
+    font-size: 11px;
+    margin-right: 12px;
+}
+
+.notificacao small {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #f04e56;
+    position: absolute;
+    top: -1px;
+    right: -2px;
+}
+
+.linhaTopo {
+    width: 1px;
+    height: 22px;
+    background-color: #e7e7e7;
+    margin-right: 12px;
+}
+
+.ladoTopo p {
+    font-size: 7px;
+}
+
+.seta {
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.conteudo {
+    padding: 18px 20px 20px 20px;
+    max-width: 1200px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.titulo h1 {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.titulo p {
+    font-size: 8px;
+    color: #777;
+    margin-top: 3px;
+}
+
+.novo {
+    width: 110px;
+    height: 27px;
+    background-color: #000;
+    color: white;
+    border-radius: 3px;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+.resumos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 17px;
+}
+
+.resumo {
+    height: 64px;
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    padding: 10px 11px;
+    box-shadow: 0 1px 5px rgba(180, 180, 180, 0.18);
+}
+
+.resumo p {
+    font-size: 6px;
+    color: #777;
+}
+
+.resumo h2 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.resumo span {
+    font-size: 6px;
+    color: #666;
+}
+
+.resumo .verde {
+    color: var(--verde);
+}
+
+.resumo .vermelho {
+    color: var(--vermelho);
+}
+
+.meio {
+    display: flex;
+    gap: 12px;
+}
+
+.esquerda {
+    flex: 1;
+    min-width: 0;
+}
+
+.direita {
+    width: 157px;
+    flex-shrink: 0;
+}
+
+.arrecadacao {
+    height: 210px;
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(180, 180, 180, 0.18);
+    padding: 15px;
+    margin-bottom: 13px;
+}
+
+.topoCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.topoCard h3 {
+    font-size: 11px;
+}
+
+.topoCard span {
+    font-size: 6px;
+    background-color: #f3f3f3;
+    padding: 3px 6px;
+    border-radius: 2px;
+}
+
+.grafico {
+    height: 132px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 0 1px;
+}
+
+.barra {
+    flex: 1;
+    background-color: #e6e4e5;
+    border-radius: 2px 2px 0 0;
+    max-width: 26px;
+}
+
+.b1 { height: 53px; }
+.b2 { height: 73px; }
+.b3 { height: 59px; }
+.b4 { height: 92px; }
+.b5 { height: 112px; }
+.b6 { height: 125px; }
+.b7 { height: 105px; }
+.b8 { height: 98px; }
+.b9 { height: 118px; }
+.b10 { height: 111px; }
+
+.barra.ativo {
+    background-color: #000;
+}
+
+.meses {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.meses span {
+    flex: 1;
+    text-align: center;
+    font-size: 6px;
+    color: #666;
+}
+
+.unidades {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(180, 180, 180, 0.18);
+    overflow: hidden;
+}
+
+.topoUnidades {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 13px;
+}
+
+.topoUnidades h3 {
+    font-size: 11px;
+}
+
+.topoUnidades a {
+    font-size: 6px;
+    color: #555;
+}
+
+.titulosTabela {
+    height: 31px;
+    background-color: #f9f8f8;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.1fr .3fr;
+    align-items: center;
+    padding: 0 12px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.titulosTabela p {
+    font-size: 5px;
+    color: #777;
+    line-height: 7px;
+}
+
+.linhaTabela {
+    height: 38px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.1fr .3fr;
+    align-items: center;
+    padding: 0 12px;
+    border-top: 1px solid #efefef;
+}
+
+.linhaTabela strong,
+.linhaTabela p {
+    font-size: 6px;
+    font-weight: normal;
+}
+
+.col3 span {
+    display: inline-block;
+    font-size: 5px;
+    padding: 4px 6px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.emDia {
+    color: #25b97b;
+    background-color: #e8f8f1;
+}
+
+.atrasado {
+    color: #ef6464;
+    background-color: #feeaea;
+}
+
+.col4 {
+    font-size: 8px;
+}
+
+.aprovacoes {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(180, 180, 180, 0.18);
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.aprovacoes h3 {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.cardReserva {
+    background-color: #f8f6f7;
+    border: 1px solid #ece9eb;
+    border-radius: 3px;
+    padding: 9px;
+    margin-bottom: 8px;
+}
+
+.linhaReserva {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linhaReserva strong {
+    font-size: 6px;
+}
+
+.linhaReserva span {
+    font-size: 5px;
+    color: #777;
+}
+
+.cardReserva p {
+    font-size: 5px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.botoesReserva {
+    display: flex;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.botoesReserva button {
+    width: 52px;
+    height: 19px;
+    background-color: #000;
+    color: white;
+    font-size: 6px;
+    border-radius: 2px;
+}
+
+.botoesReserva .claro {
+    background-color: white;
+    color: #333;
+    border: 1px solid #e0e0e0;
+}
+
+.status {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(180, 180, 180, 0.18);
+    padding: 12px;
+}
+
+.status h3 {
+    font-size: 11px;
+}
+
+.circulo {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin: 19px auto 18px auto;
+    background: conic-gradient(
+        #000 0deg 240deg,
+        #7c7c7c 240deg 330deg,
+        #f05a5a 330deg 360deg
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meioCirculo {
+    width: 54px;
+    height: 54px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.meioCirculo strong {
+    font-size: 9px;
+}
+
+.meioCirculo p {
+    font-size: 5px;
+    color: #777;
+}
+
+.legenda div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ponto {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.ponto.preto {
+    background-color: #000;
+}
+
+.ponto.cinza {
+    background-color: #777;
+}
+
+.ponto.vermelho {
+    background-color: #f25a5a;
+}
+
+.legenda p {
+    flex: 1;
+    font-size: 6px;
+    color: #555;
+}
+
+.legenda strong {
+    font-size: 6px;
+}
+
+@media (max-width: 900px) {
+    .resumos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .meio {
+        flex-direction: column;
+    }
+
+    .direita {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .pagina {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+        min-height: auto;
+        padding: 10px;
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .logo {
+        width: 100%;
+        padding-left: 2px;
+        margin-bottom: 8px;
+    }
+
+    .menu > a {
+        width: calc(50% - 2px);
+        height: 34px;
+        background-color: transparent;
+        border-left: none;
+        border-radius: 4px;
+    }
+
+    .menu .selecionado {
+        padding-left: 12px;
+        border-left: none;
+        background-color: #e6e4e6;
+    }
+
+    .usuarioMenu {
+        display: none;
+    }
+
+    .topo {
+        height: auto;
+        padding: 10px;
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pesquisa {
+        width: 100%;
+    }
+
+    .ladoTopo {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .conteudo {
+        padding: 14px;
+    }
+
+    .titulo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .resumos {
+        grid-template-columns: 1fr;
+    }
+}
