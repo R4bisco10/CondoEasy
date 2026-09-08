@@ -1,0 +1,141 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --gray: #666;
+    --box-shadow: 0 0 3px 1px rgba(204,204,204,0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: rgba(0,0,0,0.4);
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: roboto;
+}
+
+p, label, a {
+    font-size: 13px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.login {
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 3rem;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cabecalho p {
+    color: var(--gray);
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cadastro div {
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    background-color: #e0e0e0;
+    padding-left: 5px;
+}
+
+.cadastro input {
+    background-color: transparent;
+    padding: 10px;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.cadastro .senha {
+    margin-top: 1rem;
+}
+
+.cadastro .ems {
+    margin-top: 2px;
+    margin-bottom: 2rem;
+    color: #ccbbcc;
+}
+
+.btnLogar {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    gap: 5px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.divisao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.divisao span {
+    flex: 1;
+    height: 1px;
+    background-color: gray;
+}
+
+.divisao p {
+    margin: 0 1rem;
+}
+
+.criarConta {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    color: var(--black);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    color: var(--gray);
+}
+
+.informacoes div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
