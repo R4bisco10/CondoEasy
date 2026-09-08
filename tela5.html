@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamados</title>
+    <link rel="stylesheet" href="tela5.css">
+</head>
+<body>
+
+    <div class="pagina">
+
+        <div class="menu">
+
+            <div class="logo">
+                <div>
+                    <h2>CondoEasy</h2>
+                    <p>Gestão Inteligente</p>
+                </div>
+            </div>
+
+            <a>
+                <span>⌂</span>
+                <p>Início</p>
+            </a>
+
+            <a>
+                <span>▣</span>
+                <p>Reservas</p>
+            </a>
+
+            <a>
+                <span>◁</span>
+                <p>Comunicados</p>
+            </a>
+
+            <a>
+                <span>♙</span>
+                <p>Visitantes</p>
+            </a>
+
+            <a class="selecionado">
+                <span>◔</span>
+                <p>Chamados</p>
+            </a>
+
+            <a>
+                <span>◌</span>
+                <p>Moradores</p>
+            </a>
+
+            <a>
+                <span>⚙</span>
+                <p>Configurações</p>
+            </a>
+
+        </div>
+
+
+        <div class="principal">
+
+            <div class="topo">
+
+                <h1>Chamados de Manutenção</h1>
+
+                <div class="perfil">
+
+                    <div class="notificacao">
+                        <span>◔</span>
+                        <small></small>
+                    </div>
+
+                    <div class="linhaPerfil"></div>
+
+                    <div class="dadosPerfil">
+                        <h3>Ricardo Silva</h3>
+                        <p>Apto 402, Bloco B</p>
+                    </div>
+
+                    <div class="fotoPerfil"></div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="conteudo">
+
+                <div class="cabecalho">
+
+                    <div>
+                        <h2>Gerencie suas solicitações</h2>
+                        <p>Acompanhe o status e histórico de manutenções da sua unidade e áreas comuns.</p>
+                    </div>
+
+                    <button class="abrir">+ Abrir chamado</button>
+
+                </div>
+
+
+
+                <div class="area">
+
+                    <div class="novo">
+
+                        <h3>≡ Nova Solicitação</h3>
+
+                        <label>Categoria</label>
+                        <select>
+                            <option>Elétrica</option>
+                        </select>
+
+                        <label>Prioridade</label>
+
+                        <div class="prioridades">
+                            <button class="ativo">Baixa</button>
+                            <button>Média</button>
+                            <button>Alta</button>
+                        </div>
+
+                        <label>Descrição do Problema</label>
+                        <textarea placeholder="Descreva detalhadamente o ocorrido..."></textarea>
+
+                        <label>Upload de Imagens</label>
+
+                        <div class="upload">
+                            <span>☁</span>
+                            <p>Arraste fotos ou clique para selecionar</p>
+                            <small>PNG, JPG até 10MB</small>
+                        </div>
+
+                        <button class="enviar">Enviar Solicitação</button>
+
+                    </div>
+
+
+
+                    <div class="historico">
+
+                        <div class="topoHistorico">
+
+                            <h3>↺ Histórico de Chamados</h3>
+
+                            <div class="filtro">☰</div>
+
+                        </div>
+
+
+                        <div class="tabela">
+
+                            <div class="tituloTabela">
+                                <p>PROTOCOLO</p>
+                                <p>ASSUNTO</p>
+                                <p>DATA</p>
+                                <p>PRIORIDADE</p>
+                                <p>STATUS</p>
+                            </div>
+
+
+                            <div class="linhaTabela">
+
+                                <div class="col protocolo">
+                                    <strong>#CH-2034</strong>
+                                </div>
+
+                                <div class="col assunto">
+                                    <h4>Infiltração teto do banheiro</h4>
+                                    <p>Hidráulica</p>
+                                </div>
+
+                                <div class="col data">
+                                    <p>12</p>
+                                    <p>Out,</p>
+                                    <p>2023</p>
+                                </div>
+
+                                <div class="col prioridade">
+                                    <span class="alta">Alta</span>
+                                </div>
+
+                                <div class="col status">
+                                    <span class="analise">◉ Em análise</span>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="linhaTabela">
+
+                                <div class="col protocolo">
+                                    <strong>#CH-1988</strong>
+                                </div>
+
+                                <div class="col assunto">
+                                    <h4>Lâmpada queimada corredor</h4>
+                                    <p>Elétrica</p>
+                                </div>
+
+                                <div class="col data">
+                                    <p>08</p>
+                                    <p>Out,</p>
+                                    <p>2023</p>
+                                </div>
+
+                                <div class="col prioridade">
+                                    <span class="baixa">Baixa</span>
+                                </div>
+
+                                <div class="col status">
+                                    <span class="andamento">● Em andamento</span>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="linhaTabela">
+
+                                <div class="col protocolo">
+                                    <strong>#CH-1850</strong>
+                                </div>
+
+                                <div class="col assunto">
+                                    <h4>Limpeza de caixa d'água</h4>
+                                    <p>Limpeza</p>
+                                </div>
+
+                                <div class="col data">
+                                    <p>25</p>
+                                    <p>Set,</p>
+                                    <p>2023</p>
+                                </div>
+
+                                <div class="col prioridade">
+                                    <span class="media">Média</span>
+                                </div>
+
+                                <div class="col status">
+                                    <span class="finalizado">● Finalizado</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="rodapeTabela">
+
+                            <p>Mostrando 3 de 15 chamados</p>
+
+                            <div class="paginacao">
+                                <button class="apagado">Anterior</button>
+                                <button>Próxima</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
