@@ -1,0 +1,583 @@
+:root {
+    --branco: #fff;
+    --preto: #000;
+    --cinza: #777;
+    --fundo: #f8f6f7;
+    --borda: #e5e5e5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo);
+    color: #222;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+.topo {
+    height: 48px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+}
+
+.topo h2 {
+    font-size: 15px;
+}
+
+.menuTopo {
+    display: flex;
+    margin-left: 35px;
+    gap: 30px;
+    height: 100%;
+}
+
+.menuTopo a {
+    font-size: 9px;
+    color: #777;
+    display: flex;
+    align-items: center;
+}
+
+.menuTopo .ativo {
+    color: #111;
+    font-weight: bold;
+    border-bottom: 2px solid #111;
+}
+
+.perfil {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.sino {
+    font-size: 17px;
+}
+
+.foto {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle at 50% 35%, #d8b18e 0 20%, transparent 21%),
+        linear-gradient(#9aaaa9 55%, #617478 55%);
+}
+
+.pagina {
+    display: flex;
+}
+
+.menu {
+    width: 150px;
+    min-height: calc(100vh - 48px);
+    background-color: #f2f0f2;
+    padding: 18px 10px;
+}
+
+.menu a {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-left: 10px;
+    color: #555;
+    border-radius: 3px;
+}
+
+.menu a span {
+    width: 17px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.menu a p {
+    font-size: 9px;
+}
+
+.menu .selecionado {
+    background-color: #e5e3e5;
+    color: #111;
+}
+
+main {
+    flex: 1;
+    padding: 18px 25px 35px 25px;
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    font-size: 26px;
+}
+
+.titulo p {
+    font-size: 10px;
+    color: #777;
+    margin-top: 4px;
+}
+
+.espacos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+}
+
+.salao {
+    grid-column: span 2;
+    height: 240px;
+    display: flex;
+    background-color: white;
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    padding: 6px;
+    box-shadow: 0 1px 4px #ddd;
+}
+
+.fotoSalao {
+    width: 50%;
+    position: relative;
+    border-radius: 3px;
+    background:
+        linear-gradient(90deg, transparent 0 10%, #b8aea2 10% 12%, transparent 12% 88%, #b8aea2 88% 90%, transparent 90%),
+        radial-gradient(ellipse at center bottom, #504239 0 14%, transparent 15%),
+        linear-gradient(#d6cabb 0 18%, #a49c92 18% 25%, #7d7670 25% 100%);
+}
+
+.fotoSalao p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #36bf88;
+    font-size: 8px;
+}
+
+.dadosSalao {
+    width: 50%;
+    padding: 14px;
+}
+
+.nomePreco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nomePreco h3 {
+    font-size: 14px;
+}
+
+.nomePreco span {
+    font-size: 9px;
+    color: #555;
+}
+
+.dadosSalao small {
+    font-size: 8px;
+    color: #888;
+}
+
+.descricao {
+    font-size: 9px;
+    color: #666;
+    line-height: 14px;
+    margin-top: 13px;
+}
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 12px;
+}
+
+.opcoes span {
+    font-size: 7px;
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7;
+    padding: 4px 6px;
+    border-radius: 2px;
+}
+
+.botaoPreto {
+    width: 130px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    margin-top: 22px;
+    font-size: 9px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 1px 4px #ddd;
+}
+
+.churrasqueira {
+    height: 240px;
+}
+
+.fotoChurrasqueira {
+    height: 120px;
+    position: relative;
+    background:
+        linear-gradient(90deg, #dbe0d5 0 35%, #9d8465 35% 52%, #463a30 52% 100%);
+}
+
+.fotoChurrasqueira span {
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    font-size: 8px;
+    color: #e76565;
+}
+
+.fotoPiscina,
+.fotoQuadra,
+.fotoAcademia {
+    height: 100px;
+}
+
+.fotoPiscina {
+    background:
+        linear-gradient(150deg, transparent 0 45%, rgba(255,255,255,.7) 46% 48%, transparent 49%),
+        linear-gradient(#5ba2cc 0 25%, #0ba1df 25% 75%, #75c7e7 75%);
+}
+
+.fotoQuadra {
+    background:
+        linear-gradient(90deg, transparent 48%, white 49% 51%, transparent 52%),
+        linear-gradient(#6b944d 0 50%, #5b873f 50%);
+}
+
+.fotoAcademia {
+    background:
+        linear-gradient(90deg, #181818 0 15%, #333 15% 20%, #161616 20% 80%, #333 80% 85%, #181818 85%);
+}
+
+.dadosCard {
+    padding: 8px;
+}
+
+.dadosCard h3 {
+    font-size: 12px;
+}
+
+.dadosCard p {
+    font-size: 8px;
+    color: #777;
+    line-height: 12px;
+    margin-top: 5px;
+}
+
+.dadosCard button {
+    width: 100%;
+    height: 27px;
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    margin-top: 9px;
+    font-size: 8px;
+    border-radius: 3px;
+}
+
+.baixo {
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.calendario {
+    flex: 1;
+    min-height: 350px;
+    background-color: white;
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 4px #ddd;
+}
+
+.topoCalendario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topoCalendario h3 {
+    font-size: 15px;
+}
+
+.mes {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.mes p {
+    font-size: 9px;
+}
+
+.mes span {
+    font-size: 14px;
+}
+
+.semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 25px;
+    text-align: center;
+}
+
+.semana span {
+    font-size: 7px;
+    color: #888;
+}
+
+.dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 12px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.dias span {
+    width: 28px;
+    height: 28px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+
+.dias .apagado {
+    color: #ccc;
+}
+
+.dias .diaAtivo {
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    margin: 18px 0;
+}
+
+.horarios > p {
+    font-size: 8px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.horarios div {
+    display: flex;
+    gap: 7px;
+}
+
+.horarios button {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    border-radius: 3px;
+    font-size: 7px;
+}
+
+.horarios .horarioAtivo {
+    border-color: #111;
+}
+
+.horarios .bloqueado {
+    color: #bbb;
+    background-color: #f6f6f6;
+}
+
+.ladoDireito {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.resumo,
+.historico {
+    background-color: white;
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 1px 4px #ddd;
+}
+
+.resumo h3,
+.historico h3 {
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.item p {
+    font-size: 8px;
+    color: #888;
+}
+
+.item strong {
+    font-size: 8px;
+    text-align: right;
+}
+
+.total p,
+.total strong {
+    font-size: 10px;
+    color: #111;
+}
+
+.confirmar {
+    width: 100%;
+    height: 31px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    font-size: 8px;
+}
+
+.resumo small {
+    display: block;
+    font-size: 6px;
+    color: #999;
+    margin-top: 9px;
+}
+
+.historicoItem {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background-color: #f5f5f5;
+    padding: 7px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+}
+
+.ok,
+.relogio {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.ok {
+    color: #29ad75;
+    background-color: #e6f8f0;
+}
+
+.relogio {
+    background-color: #e5e5e5;
+}
+
+.historicoItem h4 {
+    font-size: 8px;
+}
+
+.historicoItem p {
+    font-size: 7px;
+    color: #888;
+    margin-top: 2px;
+}
+
+.historico > a {
+    display: block;
+    text-align: center;
+    font-size: 7px;
+    color: #777;
+    margin-top: 10px;
+}
+
+@media(max-width: 900px) {
+
+    .espacos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .salao {
+        grid-column: span 2;
+    }
+
+    .baixo {
+        flex-direction: column;
+    }
+
+    .ladoDireito {
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 650px) {
+
+    .menu {
+        display: none;
+    }
+
+    .menuTopo {
+        display: none;
+    }
+
+    .espacos {
+        grid-template-columns: 1fr;
+    }
+
+    .salao {
+        grid-column: span 1;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .fotoSalao {
+        width: 100%;
+        height: 180px;
+    }
+
+    .dadosSalao {
+        width: 100%;
+    }
+
+    .horarios div {
+        flex-wrap: wrap;
+    }
+
+}
